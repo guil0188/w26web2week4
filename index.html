@@ -24,10 +24,25 @@
           src="images/puppy-1.0.jpg"
           alt="A white puppy standing in short grass"
         />
+        <!-- the above x means pixel density, depending on the devoce you are using -->
       </section>
 
       <section class="test2">
         <!-- this section is for playing with sizes-->
+        <!-- you can also supply a set of images based on their width,
+          wich is the w below - the width should correspond to the actual image width -->
+        <img
+          srcset="
+         images/puppy-1.0.jpg 1000w, 
+         images/puppy-2.0.jpg 2000w
+         images/puppy-3.0.jpg 3000w"
+          sizes="
+         (min-width:900px) 66.6vw,
+         (min-width:1200px) 33.3vw"
+          src="images/puppy-1.0.jpg"
+          alt="A white puppy standing in short grass"
+        />
+        <!-- the sizes set how wide the image is in your browser, telling it to respond based on the changing size of your browser window or media queries -->
       </section>
 
       <section>
